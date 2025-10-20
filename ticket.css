@@ -24,10 +24,6 @@ html {
     box-sizing: inherit;
 }
 
-.form-ends {
-    display: none;
-}
-
 body {
     display: flex;
     flex-direction: column;
