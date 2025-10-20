@@ -46,14 +46,14 @@ body {
     flex-direction: column;
     color: white;
     background:
-        linear-gradient(rgba(36, 0, 70, 0),rgba(6, 0, 70, 0)),
-        url(./assets/images/background-mobile.png);
+        linear-gradient(rgba(36, 0, 70, 0), rgba(6, 0, 70, 0)),
+        url(/assets/images/background-mobile.png);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    height: 100vh;
+    padding: 60px 20px;
+   
 }
 
 .lines {
