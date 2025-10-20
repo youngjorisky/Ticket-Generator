@@ -15,95 +15,103 @@
 
 <body>
 
-  <!-- Form starts -->
-  <div class="form-start">
-    <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+  <div class="ticket-body">
+    <!-- Form starts -->
+    <div class="form-starts">
+      <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
 
-    <h4>Secure your spot at next year's biggest coding conference.</h4>
+      <h4>Secure your spot at next year's biggest coding conference.</h4>
 
-    <div>
       <div>
-        <h4>Upload Avatar</h4>
         <div>
-          <img src="./assets/images/icon-upload.svg">
-          <p>Drag and drop or click to upload</p>
+          <h4>Upload Avatar</h4>
+          <div class="img-input">
+            <img src="./assets/images/icon-upload.svg">
+            <h4>Drag and drop or click to upload</h4>
+          </div>
+          <div class="below-img-input">
+            <img src="./assets/images/icon-info.svg">
+            <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+          </div>
         </div>
-        <div>
-          <img src="./assets/images/icon-info.svg">
-          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+        <div class="input-container">
+          <h4>Full Name</h4>
+          <label>
+            <input type="text">
+          </label>
         </div>
+
+        <div class="input-container">
+          <h4>Email Address</h4>
+          <label>
+            <input type="text" placeholder="example@email.com">
+          </label>
+        </div>
+
+        <div class="input-container">
+          <h4>GitHub Username</h4>
+          <label>
+            <input type="text" placeholder="@yourusername">
+          </label>
+        </div>
+        <button>Generate My Ticket</button>
       </div>
 
-      <div>
-        <h4>Full Name</h4>
-        <label>
-          <input type="text">
-        </label>
-      </div>
-
-      <div>
-        <h4>Email Address</h4>
-        <label>
-          <input type="text" placeholder="example@email.com">
-        </label>
-      </div>
-
-      <div>
-        <h4>GitHub Username</h4>
-        <label>
-          <input type="text" placeholder="@yourusername">
-        </label>
-      </div>
-      <button>Generate My Ticket</button>
     </div>
 
-  </div>
 
+    <!-- Form ends -->
 
-  <!-- Form ends -->
+    <div class="form-ends">
 
-  <!-- Generated tickets starts -->
-  <div>
+      <img src="./assets/images/logo-full.svg">
 
-    <img src="./assets/images/logo-full.svg">
+      <h1>Congrats, <span></span>! Your ticket is ready.</h1>
 
-    <h1>Congrats, <span></span>! Your ticket is ready.</h1>
+      <h4>We've emailed your ticket to <span></span> and will send updates in the run up to the event.</h4>
 
-    <h4>We've emailed your ticket to <span></span> and will send updates in the run up to the event.</h4>
-
-    <div>
-      <div class="left-side">
-        <div class="top-side">
-          <div>
-            <img src="./assets/images/logo-mark.svg">
+      <div>
+        <div class="left-side">
+          <div class="top-side">
+            <div class="top-left">
+              <img src="./assets/images/logo-mark.svg">
+            </div>
+            <div class="top-right">
+              Coding Conf
+              Jan 31, 2025 / Austin, TX
+            </div>
           </div>
-          <div>
-            Coding Conf
-            Jan 31, 2025 / Austin, TX
+
+          <div class="bottom-side">
+            <div class="bottom-left">
+              <img src="./assets/images/image-avatar.jpg">
+            </div>
+            <div class="bottom-right">
+              <h4>Jonatan Kristof</h4>
+              <div>
+                <img src="./assets/images/icon-github.svg">
+                <p>@jonatankristof0101</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bottom-side">
-          <div>
-            <img src="./assets/images/image-avatar.jpg">
-          </div>
+        <div class="right-side">
+          <h4>#01609</h4>
         </div>
       </div>
 
-      <div class="right-side">
-
-      </div>
     </div>
 
+
+    <!-- Generated tickets ends -->
   </div>
 
-
-  <!-- Generated tickets ends -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+   <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
 
   <script src="ticket.js"></script>
 </body>
