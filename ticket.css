@@ -48,12 +48,53 @@ body {
     background-position: center;
     display: flex;
     justify-content: center;
-    padding: 60px 20px;  
+    align-items: center;
+    padding: 60px 20px;
     min-height: 100vh;
 }
 
-.form-starts h4{
+.form-ends {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background:
+        linear-gradient(to top, hsla(271, 100%, 14%, 0.8), hsla(245, 100%, 14%, 0)),
+        url(/assets/images/background-mobile.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.form-ends h1 {
+    text-align: center;
+    font-size: 1.68rem;
+}
+
+.form-ends>h3 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+h1 span {
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 span {
+    color: hsl(7, 86%, 67%);
+}
+
+.form-starts h4 {
     color: hsl(0, 0%, 100%, 0.5);
+}
+
+.form-starts {
+    display: none;
 }
 
 .lines {
@@ -177,4 +218,120 @@ button {
     border: transparent;
     color: hsl(247, 61%, 16%);
     background-color: hsl(7, 88%, 67%);
+}
+
+.display-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid linear-gradient(to right, hsl(0, 0%, 100%), hsl(7, 86%, 67%));
+    background-color: hsl(0, 0%, 100%, 0.5);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-side {
+    display: flex;
+    flex: 50%;
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left img {
+    width: 25px;
+    margin-top: 5px;
+}
+
+.top-right p,
+.bottom-right-down p {
+    font-size: 0.7rem;
+    margin-top: 2px;
+}
+
+.bottom-side {
+    display: flex;
+    flex: 50%;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.bottom-left img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-right h4 {
+    margin: 2px 0px 2px 0px;
+}
+
+.bottom-right-down {
+    display: flex;
+    align-items: start;
+}
+
+.bottom-right-down img {
+    width: 15px;
+}
+
+.top-right h2 {
+    margin: 0;
+}
+
+.extra-dash {
+    border-left: 2.5px dashed white;
+    height: 120px;
+    width: 0;
+    margin-left: 30px;
+}
+
+.right-side h4 {
+    transform: rotate(90deg);
+}
+
+.display-ticket {
+    position: relative;
+    overflow: hidden;
+}
+
+.display-ticket::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 12%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 38px;
+    background: hsl(247, 61%, 16%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.display-ticket::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    right: 12%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 38px;
+    background: hsl(247, 61%, 16%);
+    border-radius: 50%;
+    z-index: 1;
 }
