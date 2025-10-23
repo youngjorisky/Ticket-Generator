@@ -42,7 +42,7 @@ function handleImageFile(file) {
     const belowInput = document.querySelector(".section-1 .below-img-input");
     const warnImage = belowInput.querySelector("img");
     const inputImg = document.querySelector(".img-input img");
-    
+
     if (file && file.size <= 500 * 1024) {
         const reader = new FileReader();
         reader.onload = (event) => {
@@ -52,7 +52,7 @@ function handleImageFile(file) {
             inputImg.style.objectFit = "cover";
             inputImg.style.borderRadius = "10px";
             inputImg.style.padding = "0px";
-            ticketAvatar.src = uploadedSrc;   
+            ticketAvatar.src = uploadedSrc;
         };
         reader.readAsDataURL(file);
 
@@ -71,10 +71,10 @@ function handleImageFile(file) {
 }
 
 function generateRandomCode() {
-  const randomPart = Math.floor(Math.random() * 100000)
-    .toString()
-    .padStart(5, '0');
-  ticketNumber.textContent = `#0${randomPart}`;
+    const randomPart = Math.floor(Math.random() * 100000)
+        .toString()
+        .padStart(5, '0');
+    ticketNumber.textContent = `#0${randomPart}`;
 }
 
 const infoBoxes = document.querySelectorAll(".below-img-input");
