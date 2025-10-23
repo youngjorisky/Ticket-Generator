@@ -30,10 +30,11 @@
       <h4>Secure your spot at next year's biggest coding conference.</h4>
 
       <div>
-        <div>
+        <div class="section-1">
           <h4>Upload Avatar</h4>
-          <div class="img-input">
-            <img src="./assets/images/icon-upload.svg">
+          <div class="img-input" id="uploadBox">
+            <img src="./assets/images/icon-upload.svg" id="uploadIcon">
+            <input type="file" id="avatar" accept="image/png, image/jpeg" hidden>
             <h4>Drag and drop or click to upload</h4>
           </div>
           <div class="below-img-input">
@@ -42,27 +43,40 @@
           </div>
         </div>
 
-        <div class="input-container">
+        <div class="section-2 input-container">
           <h4>Full Name</h4>
           <label>
-            <input type="text">
+            <input type="text" id="fullname">
           </label>
+          <div class="below-img-input">
+            <img src="./assets/images/icon-info.svg">
+            <p></p>
+          </div>
         </div>
 
-        <div class="input-container">
+        <div class="section-3 input-container">
           <h4>Email Address</h4>
           <label>
-            <input type="text" placeholder="example@email.com">
+            <input type="text" id="email" placeholder="example@email.com">
           </label>
+          <div class="below-img-input">
+            <img src="./assets/images/icon-info.svg">
+            <p></p>
+          </div>
         </div>
 
-        <div class="input-container">
+        <div class="section-4 input-container">
           <h4>GitHub Username</h4>
           <label>
-            <input type="text" placeholder="@yourusername">
+            <input type="text" id="github" placeholder="@yourusername">
           </label>
+           <div class="below-img-input">
+            <img src="./assets/images/icon-info.svg">
+            <p></p>
+          </div>
         </div>
-        <button>Generate My Ticket</button>
+
+        <button id="generate">Generate My Ticket</button>
       </div>
 
     </div>
@@ -77,9 +91,10 @@
       <img class="circle" src="./assets/images/pattern-circle.svg">
       <img class="curl-top" src="./assets/images/pattern-squiggly-line-top.svg">
 
-      <h1>Congrats, <span>Jonathan Kristof</span>! Your ticket is ready.</h1>
+      <h1>Congrats, <span id="ticket-name">Jonathan Kristof</span>! Your ticket is ready.</h1>
 
-      <h3>We've emailed your ticket to <span>jonatan@email.com</span> and will send updates in the run up to the event.
+      <h3>We've emailed your ticket to <span id="ticket-email">jonatan@email.com</span> and will send updates in the run
+        up to the event.
       </h3>
 
       <div class="display-ticket">
@@ -90,7 +105,7 @@
             </div>
             <div class="top-right">
               <h2>Coding Conf</h2>
-              <p>Jan 31, 2025 / Austin, TX</p>
+              <p id="present-date"></p>
             </div>
           </div>
 
@@ -99,10 +114,10 @@
               <img src="./assets/images/image-avatar.jpg">
             </div>
             <div class="bottom-right">
-              <h4>Jonatan Kristof</h4>
+              <h4 id="ticket-bottom-name">Jonatan Kristof</h4>
               <div class="bottom-right-down">
                 <img src="./assets/images/icon-github.svg">
-                <p>@jonatankristof0101</p>
+                <p id="ticket-github">@jonatankristof0101</p>
               </div>
             </div>
           </div>
@@ -111,10 +126,9 @@
         <div class="extra-dash"></div>
 
         <div class="right-side">
-          <h4>#01609</h4>
+          <h4 id="ticket-number"></h4>
         </div>
       </div>
-
     </div>
 
 
