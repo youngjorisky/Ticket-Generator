@@ -58,9 +58,10 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    background:
-        linear-gradient(to top, hsla(271, 100%, 14%, 0.8), hsla(245, 100%, 14%, 0)),
-        url(/assets/images/background-mobile.png);
+    background: linear-gradient(to top,
+            hsla(271, 100%, 10%, 0.9),
+            hsla(245, 100%, 10%, 0.2)),
+        url(/assets/images/background-desktop.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -251,9 +252,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(7, 86%, 67%));
-    border-image-slice: 1;
     background-color: hsl(0, 0%, 100%, 0.2);
     backdrop-filter: blur(50px);
     padding: 5px 15px 5px 15px;
@@ -385,6 +383,19 @@ button {
     .form-starts,
     .form-ends {
         padding: 50px 200px;
+        background: linear-gradient(to top,
+                hsla(271, 100%, 10%, 0.9),
+                hsla(245, 100%, 10%, 0.2)),
+            url(/assets/images/background-desktop.png);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background 0.4s ease;
+    }
+
+    input,
+    .img-input {
+        background-color: hsla(0, 0%, 40%, 0.1);
     }
 
     .logo-full {
@@ -396,10 +407,11 @@ button {
         font-size: 3.5rem;
     }
 
-    .form-starts h4{
+    .form-starts h4 {
         font-size: 1.4rem;
     }
-    .form-ends h3{
+
+    .form-ends h3 {
         font-size: 1.4rem;
         padding: 0px 90px;
     }
@@ -439,13 +451,16 @@ button {
         border-radius: 50%;
         z-index: 1;
     }
-    .left-side{
+
+    .left-side {
         gap: 30px;
     }
-   .bottom-left img{
+
+    .bottom-left img {
         width: 70px;
     }
-    .top-left img{
+
+    .top-left img {
         width: 40px;
     }
 }
