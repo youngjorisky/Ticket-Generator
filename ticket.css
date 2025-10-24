@@ -86,7 +86,9 @@ body {
 
 h1 span {
     background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
@@ -150,7 +152,7 @@ h3 span {
     background-color: hsla(0, 0%, 100%, 0.1);
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
     position: relative;
     z-index: 10;
@@ -259,7 +261,7 @@ button {
     background-color: hsl(0, 0%, 100%, 0.2);
     backdrop-filter: blur(50px);
     padding: 5px 15px 5px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 40px;
     position: relative;
     overflow: hidden;
@@ -388,13 +390,12 @@ button {
     .form-ends {
         padding: 50px 200px;
         background: linear-gradient(to top,
-                hsla(271, 100%, 10%, 0.9),
+                hsla(271, 100%, 8%, 0.9),
                 hsla(245, 100%, 10%, 0.2)),
-            url(/assets/images/background-desktop.png);
-
+            url(./assets/images/background-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
-        transition: background 0.4s ease;
+        transition: background 2s ease;
     }
 
     input,
@@ -409,6 +410,7 @@ button {
     .form-starts h2,
     .form-ends h1 {
         font-size: 3.5rem;
+        margin-top: 100px;
     }
 
     .form-starts h4 {
@@ -417,7 +419,7 @@ button {
 
     .form-ends h3 {
         font-size: 1.4rem;
-        padding: 0px 90px;
+        padding: 0px 200px;
     }
 
     .section-1 h4 {
@@ -432,15 +434,17 @@ button {
         width: 500px;
         height: 240px;
         font-size: 2rem;
-        padding: 5px 0px 5px 10px;
-        gap: 20px;
+        padding: 5px 0px 5px 0px;
+        gap: 50px;
+        margin-top: 100px;
     }
 
     .extra-dash {
         border-left: 4px dashed hsl(0, 0%, 100%, 0.5);
         height: 190px;
         width: 0;
-        margin-left: 10px;
+        margin-left: 0px;
+        transform: translateX(46px);
     }
 
     .display-ticket::before,
@@ -466,6 +470,33 @@ button {
 
     .top-left img {
         width: 40px;
+    }
+
+    .top-right {
+        gap: 10px;
+    }
+
+    .top-right p {
+        color: hsl(0, 0%, 100%, 0.7);
+        font-size: 0.9rem;
+    }
+
+    .top-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .bottom-right-down {
+        gap: 5px;
+    }
+
+    .bottom-right-down p {
+        color: hsl(0, 0%, 100%, 0.7);
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .bottom-right-down img {
+        width: 20px;
     }
 
     .curl-bottom {
