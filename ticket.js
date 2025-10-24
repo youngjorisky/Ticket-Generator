@@ -70,7 +70,7 @@ function handleImageFile(file) {
     }
 }
 
-function generateRandomCode() {
+function generateRandomCode(){
     const randomPart = Math.floor(Math.random() * 100000)
         .toString()
         .padStart(5, '0');

@@ -69,6 +69,10 @@ body {
     height: 100vh;
 }
 
+.form-ends {
+    display: none;
+}
+
 .form-ends h1 {
     text-align: center;
     font-size: 1.68rem;
@@ -91,10 +95,6 @@ h3 span {
 
 .form-starts h4 {
     color: hsl(0, 0%, 100%, 0.5);
-}
-
-.form-ends {
-    display: none;
 }
 
 .lines {
@@ -261,6 +261,8 @@ button {
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+    width: 310px;
+    height: 130px;
 }
 
 .left-side {
@@ -341,14 +343,13 @@ button {
 .display-ticket::after {
     content: "";
     position: absolute;
-    right: 12%;
+    right: 16%;
     transform: translateX(-50%);
     width: 30px;
     height: 38px;
     background: hsl(247, 61%, 16%);
     border-radius: 50%;
     z-index: 1;
-
 }
 
 .display-ticket::before {
@@ -374,4 +375,77 @@ button {
 .below-img-input.error textarea {
     border-color: hsl(0, 100%, 80%);
     background-color: rgba(255, 0, 0, 0.08);
+}
+
+@media(min-width: 1000px) {
+    .ticket-body {
+        width: 100%;
+    }
+
+    .form-starts,
+    .form-ends {
+        padding: 50px 200px;
+    }
+
+    .logo-full {
+        width: 25%;
+    }
+
+    .form-starts h2,
+    .form-ends h1 {
+        font-size: 3.5rem;
+    }
+
+    .form-starts h4{
+        font-size: 1.4rem;
+    }
+    .form-ends h3{
+        font-size: 1.4rem;
+        padding: 0px 90px;
+    }
+
+    .section-1 h4 {
+        color: white;
+    }
+
+    .input-container h4 {
+        color: white;
+    }
+
+    .display-ticket {
+        width: 500px;
+        height: 240px;
+        font-size: 2rem;
+        padding: 5px 0px 5px 10px;
+        gap: 20px;
+    }
+
+    .extra-dash {
+        border-left: 4px dashed hsl(0, 0%, 100%, 0.5);
+        height: 190px;
+        width: 0;
+        margin-left: 10px;
+    }
+
+    .display-ticket::before,
+    .display-ticket::after {
+        content: "";
+        position: absolute;
+        right: 20.5%;
+        transform: translateX(-50%);
+        width: 35px;
+        height: 43px;
+        background: hsl(247, 61%, 16%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .left-side{
+        gap: 30px;
+    }
+   .bottom-left img{
+        width: 70px;
+    }
+    .top-left img{
+        width: 40px;
+    }
 }
