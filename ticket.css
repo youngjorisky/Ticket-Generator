@@ -100,9 +100,9 @@ h3 span {
 
 .lines {
     position: absolute;
-    top: 27.5%;
+    top: 45%;
     left: 50%;
-    height: 500px;
+    height: 90%;
     transform: translate(-50%, -50%);
     filter: none;
     opacity: 1;
@@ -115,6 +115,10 @@ h3 span {
     left: 0%;
     width: 260px;
     z-index: 1;
+}
+
+.curl-bottom-desktop {
+    display: none;
 }
 
 .form-starts>h2,
@@ -462,5 +466,36 @@ button {
 
     .top-left img {
         width: 40px;
+    }
+
+    .curl-bottom {
+        display: none;
+    }
+
+    .curl-bottom-desktop {
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 65%;
+        z-index: 1;
+    }
+
+    .curl-top {
+        top: 12%;
+        right: 0%;
+        width: 30%;
+    }
+
+    .circle {
+        bottom: 28%;
+        right: 19.5%;
+        width: 17%;
+    }
+
+    .lines {
+        top: 50%;
+        left: 50%;
+        height: 100%;
     }
 }
