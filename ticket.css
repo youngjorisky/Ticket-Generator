@@ -43,7 +43,7 @@ body {
     color: white;
     background:
         linear-gradient(rgba(36, 0, 70, 0), rgba(6, 0, 70, 0)),
-        url(/assets/images/background-mobile.png);
+        url(./assets/images/background-mobile.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -61,7 +61,7 @@ body {
     background: linear-gradient(to top,
             hsla(271, 100%, 10%, 0.9),
             hsla(245, 100%, 10%, 0.2)),
-        url(/assets/images/background-desktop.png);
+        url(./assets/images/background-desktop.png);
     background-size: cover;
     background-position: center;
     display: flex;
